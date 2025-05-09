@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Datenschutzerklärung / Privacy Policy</title>
+    <style>
+        .lang { display: none; }
+        .active { display: block; }
+        .lang-switch { margin: 10px; cursor: pointer; }
+    </style>
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Sprachwahl -->
+    <div>
+        <span class="lang-switch" onclick="showLang('de')">Deutsch</span> | 
+        <span class="lang-switch" onclick="showLang('en')">English</span>
+    </div>
+
+    <!-- Deutsch -->
+    <div id="de" class="lang active">
+        <h1>Datenschutzerklärung</h1>
+
+        <h2>Kontaktperson:</h2>
+        <p>Thomas Herzog<br>(cendia.de)</p>
+
+        <h2>Email:</h2>
+        <p>info@cendia.de</p>
+
+        <h2>Stopwatch 4 TS Lite:</h2>
+        <p>Diese App sammelt oder speichert keinerlei personenbezogene Daten. Sie dient ausschließlich der Zeitmessung und bietet die Möglichkeit, auf Wunsch Zeitaufnahmen lokal auf dem Gerät zu speichern.</p>
+        <p>Zusätzlich können diese Zeitaufnahmen auf Wunsch des Nutzers über die E-Mail-Funktion des Geräts weitergeleitet werden. In diesem Fall werden die Zeitaufnahmen nur über den E-Mail-Dienst des Geräts versendet, und es erfolgt keine weitere Speicherung oder Verarbeitung durch die App selbst.</p>
+
+        <h2>Stopwatch 4 TS:</h2>
+        <p>Diese App sammelt und speichert keine personenbezogenen Daten, es sei denn, der Nutzer aktiviert explizit Funktionen wie die Speicherung von Messreihen in der iCloud.</p>
+
+        <h3>Berechtigungen der App:</h3>
+        <ul>
+            <li>Mikrofonzugriff: Geräuschpegel zur Erfassung von Taktzeiten. Keine Speicherung der Aufnahmen.</li>
+            <li>Kamerazugriff: Vergleich von Bildern mit Livebildern. Temporäre Verarbeitung ohne Speicherung.</li>
+            <li>Mobile Daten: Speicherung von Messreihen in der iCloud nur auf ausdrücklichen Nutzerwunsch.</li>
+        </ul>
+
+        <h3>Verwendung der iCloud:</h3>
+        <p>Die App speichert Zeitaufnahmen in der iCloud nur auf Wunsch des Nutzers. Der Zugriff beschränkt sich auf die selbst erzeugten Daten im iCloud-Bereich (CoreData). Es besteht kein Zugriff auf andere Daten.</p>
+
+        <h3>Sicherheit und Schutz der Daten:</h3>
+        <p>Die App überträgt nur Daten, die der Nutzer explizit freigibt. Ohne Zustimmung erfolgt keine Verarbeitung oder Speicherung.</p>
+    </div>
+
+    <!-- Englisch -->
+    <div id="en" class="lang">
+        <h1>Privacy Policy</h1>
+
+        <h2>Contact Person:</h2>
+        <p>Thomas Herzog<br>(cendia.de)</p>
+
+        <h2>Email:</h2>
+        <p>info@cendia.de</p>
+
+        <h2>Stopwatch 4 TS Lite:</h2>
+        <p>This app does not collect or store any personal data. It is solely used for time measurement and offers the option to locally store time recordings on the device upon user request.</p>
+        <p>Additionally, users can choose to forward time recordings via the device's email function. In this case, the recordings are only sent through the device's email service, and no further storage or processing by the app itself takes place.</p>
+
+        <h2>Stopwatch 4 TS:</h2>
+        <p>This app does not collect or store personal data unless the user explicitly activates functions like saving recordings to iCloud.</p>
+
+        <h3>App Permissions:</h3>
+        <ul>
+            <li>Microphone access: Detects sound levels to record timing. No audio storage.</li>
+            <li>Camera access: Compares images with live images. Temporary processing without storage.</li>
+            <li>Mobile data: Saves recordings to iCloud only upon explicit user activation.</li>
+        </ul>
+
+        <h3>Use of iCloud:</h3>
+        <p>The app saves time recordings to iCloud only if the user explicitly activates this function. The access is limited to data generated and stored by the app within the iCloud area (CoreData). There is no access to other data.</p>
+
+        <h3>Data Security and Protection:</h3>
+        <p>The app only transmits data explicitly released by the user. No data processing or storage occurs without consent.</p>
+    </div>
+
+</body>
+</html>
