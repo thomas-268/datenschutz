@@ -1,1 +1,1 @@
-# datenschutz
+# Datenschutzerklärung / Privacy Policy iOS Apps
